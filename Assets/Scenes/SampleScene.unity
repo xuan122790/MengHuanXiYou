@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.1
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -114,7 +114,7 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.033333335
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 328492478}
   - component: {fileID: 328492480}
   - component: {fileID: 328492481}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,7 +438,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0021893978, y: -0.36981565, z: -9.999949}
+  m_LocalPosition: {x: 0.5581894, y: -2.2748158, z: -9.99795}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -595,9 +595,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 625460446}
-  - component: {fileID: 625460449}
   - component: {fileID: 625460448}
   - component: {fileID: 625460447}
+  - component: {fileID: 625460449}
   m_Layer: 0
   m_Name: NOtWalkable
   m_TagString: Untagged
@@ -698,8 +698,9 @@ PolygonCollider2D:
       - {x: -8.412641, y: 1.2331165}
       - {x: -7.504892, y: -0.05568731}
       - {x: -9.582243, y: -2.0412986}
-      - {x: -8.606095, y: -4.039857}
-      - {x: -7.094204, y: -4.3293486}
+      - {x: -9.111361, y: -2.8569238}
+      - {x: -8.342881, y: -3.5510306}
+      - {x: -6.9813976, y: -3.80292}
       - {x: -5.252177, y: -3.2106018}
       - {x: -2.0940323, y: -2.4867618}
       - {x: -3.076449, y: -1.4965873}
@@ -729,8 +730,9 @@ PolygonCollider2D:
       - {x: -1.5552137, y: -1.4194447}
       - {x: 0.25741583, y: -1.5863061}
       - {x: 2.913458, y: -0.89321893}
-      - {x: 3.2614505, y: -0.9324818}
-      - {x: 4.1248302, y: -1.4206443}
+      - {x: 4.8407393, y: 0.007569313}
+      - {x: 5.516105, y: -0.33018512}
+      - {x: 4.9393744, y: -1.4886627}
       - {x: 2.7840528, y: -1.5813143}
       - {x: 0.5358091, y: -3.5115771}
       - {x: -0.89315915, y: -5.119775}
@@ -770,58 +772,19 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!212 &625460449
-SpriteRenderer:
+--- !u!114 &625460449
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625460445}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 203524bdbf2a5364bae94677726622b1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 24, y: 24}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8354458d7234fdf459bd03f2c882806e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterAI: {fileID: 1579071620}
 --- !u!1 &812111007
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,7 +811,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812111007}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.954, y: 9.832001, z: -0.94499874}
+  m_LocalPosition: {x: 1.51, y: 9.830001, z: -2.8499994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1017,6 +980,7 @@ GameObject:
   - component: {fileID: 1579071619}
   - component: {fileID: 1579071621}
   - component: {fileID: 1579071620}
+  - component: {fileID: 1579071622}
   m_Layer: 0
   m_Name: PlayerNormal
   m_TagString: Untagged
@@ -1032,7 +996,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1579071617}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.954, y: -0.168, z: -0.945}
+  m_LocalPosition: {x: 1.51, y: -0.17, z: -2.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1053,6 +1017,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meshAgent: {fileID: 1579071621}
+  cac: {fileID: 1579071622}
+  willStoping: 0
 --- !u!195 &1579071621
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1062,16 +1028,29 @@ NavMeshAgent:
   m_GameObject: {fileID: 1579071617}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.28
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Radius: 0.06
+  m_Speed: 1.8
+  m_Acceleration: 50
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 0.15
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.91
-  m_BaseOffset: 0.455
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1579071622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579071617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3cfe1ffecaf40b499e81b778d55dcd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 322422177}
